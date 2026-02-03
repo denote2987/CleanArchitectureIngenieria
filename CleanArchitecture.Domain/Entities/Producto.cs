@@ -23,6 +23,5 @@ namespace CleanArchitecture.Domain.Entities
         public decimal Costo { get; set; }
         [Column(TypeName = "decimal(18,2)")]
         public decimal PrecioVenta { get; set; }
-
     }
 }

@@ -9,8 +9,8 @@ namespace CleanArchitecture.Domain.Entities
     {
         [Key]
         public int Id { get; set; }
-        public bool Activo { get; set; }
-        public bool Eliminado { get; set; }
+        public bool Activo { get; set; } = true;
+        public bool Eliminado { get; set; } = false;
         public DateTime FechaDeCreacion { get; set; } = DateTime.Now;
         // nullable = puede ser nulo
         public DateTime? FechaDeActualizacion { get; set; }
