@@ -12,5 +12,7 @@ namespace CleanArchitecture.Domain.Entities
 
         [MaxLength(250)]
         public string? Ubicacion { get; set; }
+
+        public ICollection<Existencia> Existencias { get; set; } = new List<Existencia>();
     }
 }

@@ -23,5 +23,8 @@ namespace CleanArchitecture.Domain.Entities
         public decimal Costo { get; set; }
         [Column(TypeName = "decimal(18,2)")]
         public decimal PrecioVenta { get; set; }
+
+        public ICollection<Existencia> Existencias { get; set; } = new List<Existencia>();
+        public ICollection<MovimientoInventario> Movimientos { get; set; } = new List<MovimientoInventario>();
     }
 }

@@ -12,7 +12,6 @@ namespace CleanArchitecture.Domain.Entities
         public TipoMovimientoInventario Tipo { get; set; }
         public int ProductoId { get; set; }
         public Producto Producto { get; set; } = default!;
-
         public int AlmacenId { get; set; }
         public Almacen Almacen { get; set; } = default!;
 
