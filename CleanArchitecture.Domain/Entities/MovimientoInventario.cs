@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CleanArchitecture.Domain.Entities
 {
-    public class MovimientoInventario
+    public class MovimientoInventario : EntidadBase
     {
         public TipoMovimientoInventario Tipo { get; set; }
         public int ProductoId { get; set; }
