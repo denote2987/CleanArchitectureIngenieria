@@ -22,6 +22,5 @@ namespace CleanArchitecture.Infrastructure.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
-
     }
 }
