@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CleanArchitecture.Domain.Entities
 {
-    public class Almacen
+    public class Almacen : EntidadBase
     {
         [Required, MaxLength(120)]
         public string Nombre { get; set; } = default!;

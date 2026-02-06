@@ -19,9 +19,9 @@ namespace CleanArchitecture.Domain.Entities
         public Categoria Categoria { get; set; } = default!;
         public int UnidadMedidaId { get; set; }
         public UnidadMedida UnidadMedida { get; set; } = default!;
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal(16,2)")]
         public decimal Costo { get; set; }
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal(16,2)")]
         public decimal PrecioVenta { get; set; }
 
         public ICollection<Existencia> Existencias { get; set; } = new List<Existencia>();
