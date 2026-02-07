@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CleanArchitecture.Domain.Entities
 {
-    public class Existencia
+    public class Existencia : EntidadBase
     {
         public int ProductoId { get; set; }
         public Producto Producto { get; set; } = default!;
