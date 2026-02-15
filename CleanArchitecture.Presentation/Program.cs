@@ -1,7 +1,11 @@
 using CleanArchitecture.Infrastructure;
 using CleanArchitecture.Presentation;
 
+// Environment variables will be loaded automatically from the system
 var builder = WebApplication.CreateBuilder(args);
+
+// Add environment variables as configuration source with optional .env file support
+builder.Configuration.AddEnvironmentVariables();
 
 // Add services to the container.
 
